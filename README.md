@@ -9,4 +9,4 @@
 - git clone https://github.com/LilZevi/AminoCoinIpBo
 - !Для запуска/For starting!
 - cd AminoCoinIpBo
-- python AminoCoinIpBo
+- python AminoCoinIpBo.py
