@@ -17,10 +17,10 @@ client = amino.Client()
 email = input("Email/Почта: ")
 password = input("Password/Пароль: ")
 client.login(email=email, password=password)
-for z, name in enumerate(client.sub_clients().name, 1):
-    print(f"{z}.{name}")
-
-comid = input("Выберите Сообщество/Select community: ")
+clients = client.sub_clients(start=0, size=1000)
+for x, name in enumerate(clients.name, 1):
+    print(f"{x}.{name}")
+communityid = clients.comId[int(input("Выберите сообщество/Select the community: "))-1]
 
 sub_client=amino.SubClient(comId=comid, profile=client.profile)
 
