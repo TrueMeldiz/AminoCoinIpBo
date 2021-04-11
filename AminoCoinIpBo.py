@@ -22,7 +22,7 @@ for x, name in enumerate(clients.name, 1):
     print(f"{x}.{name}")
 communityid = clients.comId[int(input("Выберите сообщество/Select the community: "))-1]
 
-sub_client=amino.SubClient(comId=comid, profile=client.profile)
+sub_client=amino.SubClient(comId=communityid, profile=client.profile)
 
 wallet=sub_client.get_wallet_history(size=50)
 print("Получаем ip людей которые перевели вам монеты!")
