@@ -1,14 +1,11 @@
+import amino
+import pyfiglet
 from colorama import init, Fore, Back, Style
 init()
-print(Back.BLACK)
-print(Fore.GREEN)
-print(Style.NORMAL)
+print(Fore.GREEN + Style.NORMAL)
 print("""Script by Lil Zevi
-Github : https://github.com/LilZevi
-▄▀▄ ██▄██ ▀█▀ █▄░█ ▄▀▀▄ ▄▀▀ ▄▀▀▄ ▀█▀ █▄░█ ▀█▀ █▀▄ █▀▄ ▄▀▀▄
-█▄█ █░▀░█ ░█░ █▀██ █░░█ █░░ █░░█ ░█░ █▀██ ░█░ █▀░ █▀▄ █░░█
-▀░▀ ▀░░░▀ ▀▀▀ ▀░░▀ ░▀▀░ ░▀▀ ░▀▀░ ▀▀▀ ▀░░▀ ▀▀▀ ▀░░ ▀▀░ ░▀▀░""")
-import amino
+Github : https://github.com/LilZevi""")
+print(pyfiglet.figlet_format("aminocoinipbo", font="rounded"))
 client = amino.Client()
 email = input("Email/Почта: ")
 password = input("Password/Пароль: ")
